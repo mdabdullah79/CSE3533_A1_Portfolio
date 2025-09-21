@@ -163,7 +163,7 @@ button{
 }
 button:hover{
     background-color: white;
-    transform: scale(1.1);
+    transform: scale(1.05);
     
 }
 .bannerImage{
@@ -182,7 +182,7 @@ button:hover{
     padding: 20px;
 }
 
-.aboutmeTitle{
+.titleborder{
     border-bottom: 1px solid black;
     padding: 10px;
 }
@@ -227,11 +227,15 @@ button:hover{
 }
 
 .formSection{
-     border: 1px solid black;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.mainform{
     padding: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .frominside{
