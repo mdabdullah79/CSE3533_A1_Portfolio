@@ -1,122 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Protfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/mypic.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/mypic.jpg" type="image/x-icon" />
 
     <!-- font awsome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div>
-                <img src="images/Asset 1.png" alt="" id="logo">
-            </div>
-                <ul>
-                    <li><a href=""> <b>HOME</b></a></li>
-                    <li><a href="">PROJECTS</a></li>
-                    <li><a href="#aboutme">ABOUT</a></li>
-                    <li><a href="">TOOL & SKILLS</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-        </nav>
-
-        <div class="banner">
-            <div class="bannerInside">
-                <div class="bannerLeft">
-                <h1>MOHAMMAD ABDULLAH</h1>
-                <h3>WebDevloper</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam in non quibusdam doloremque aspernatur delectus veritatis, sint id inventore, unde incidunt amet aut repudiandae. Iste maxime recusandae dolorum numquam cupiditate?</p>
-                <div class="bannerbtn">
-                    <button id="seeworkbtn">See Work <i class="fa-solid fa-arrow-right"></i></button>
-                    <button>Contact Me  <i class="fa-solid fa-phone"></i></button>
-                </div>
-            </div>
-            <div class="bannerRight">
-                <img src="images/mypic.jpg" alt="" class="bannerImage">
-            </div>
-            
-          
+      <!-- NavBar -->
+      <nav>
+        <div>
+          <img src="images/Asset 1.png" alt="" id="logo" />
         </div>
-            </div>
-    </header>
+        <nav class="navbar">
+          <!-- Desktop Menu -->
+          <ul class="menu">
+            <li>
+              <a href="#"> <b>HOME</b></a>
+            </li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#aboutme">ABOUT</a></li>
+            <li><a href="#skills">TOOL & SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+
+          <!-- Mobile Menu (hidden on desktop) -->
+          <div class="mobile-menu">
+            <select id="nav-select" onchange="location = this.value;">
+              <option value="#home">HOME</option>
+              <option value="#project">PROJECTS</option>
+              <option value="#aboutme">ABOUT</option>
+              <option value="#skills">TOOL & SKILLS</option>
+              <option value="#contact">CONTACT</option>
+            </select>
+          </div>
+        </nav>
+      </nav>
+
+      
 
     <main>
-        <section id="aboutme" class="aboutme">
-            <div class="SectionInside">
-            <h1 class="titleborder">ABOUT ME</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quo, veritatis similique eligendi culpa autem consequatur dicta ab nemo nostrum aliquam. Quis, laborum, cumque distinctio dicta maxime ipsum rem aut illo dolore, eos sapiente tempore eius impedit? Dolores voluptates molestiae nam qui architecto temporibus repellat, earum tempore laborum quia quae fugiat amet quaerat libero iusto suscipit in neque soluta cumque fuga! Deleniti voluptates, recusandae at est reiciendis aspernatur. Delectus, laboriosam autem vero soluta deserunt natus voluptatum optio commodi neque aut modi error nemo tenetur amet veniam tempora, harum, rem blanditiis omnis similique in doloremque? Numquam animi iste hic incidunt sunt.</p>
+
+      <!-- Banner Section -->
+       <div class="banner">
+        <div class="bannerInside">
+          <div class="bannerLeft">
+            <h1>MOHAMMAD ABDULLAH</h1>
+            <h3>Learner || Developer || Problem Solver </h3>
+            <p>
+              I love turning ideas into digital solutions. From web development
+              to problem-solving, I enjoy learning, experimenting, and building
+              projects that make a difference.
+            </p>
+            <div class="bannerbtn">
+              <button id="seeworkbtn">
+                See Work <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <button>Contact Me <i class="fa-solid fa-phone"></i></button>
             </div>
-        </section>
+          </div>
+          <div class="bannerRight">
+            <img src="images/mypic.jpg" alt="" class="bannerImage" />
+          </div>
+        </div>
+      </div>
+    </header>
 
-        <section id="" class="skill">
-            <div class="SectionInside">
-                <h1 class="titleborder">MY SKILL</h1>
+    <!-- About Me -->
+      <section id="aboutme" class="aboutme">
+        <div class="SectionInside">
+          <h1 class="titleborder">ABOUT ME</h1>
+          <div class="aboutdeatail">
 
-                <div class="skills">
-                    <div class="skillCard">
-                    <img src="images/C++.png" alt="" class="skillicon">
-                    <h3>C++</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, nobis.</p>
-                    </div>
-                    <div class="skillCard">
-                    <img src="images/JavaScript-logo.png" alt="" class="skillicon">
-                    <h3>C++</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, nobis.</p>
-                    </div>
-                    <div class="skillCard">
-                    <img src="images/React-icon.svg.png" alt="" class="skillicon">
-                    <h3>C++</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, nobis.</p>
-                    </div>
+            <!-- AboutLeft -->
+            <div class="aboutleft">
+              <p>
+                I’m passionate about technology, problem-solving, and building solutions that make a difference. My main focus is on web development, where I enjoy designing and developing applications that are both functional and user-friendly. I love exploring new technologies, learning continuously, and taking on challenges that help me grow as a developer. Beyond coding, I enjoy working on creative projects, collaborating with others, and finding innovative ways to turn ideas into reality. My goal is to keep improving my skills and contribute to meaningful projects that can have a positive impact."
+              </p>
+            </div>
 
-                    <div class="skillCard">
-                    <img src="images/C++.png" alt="" class="skillicon">
-                    <h3>C++</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, nobis.</p>
-                    </div>
-                    <div class="skillCard">
-                    <img src="images/JavaScript-logo.png" alt="" class="skillicon">
-                    <h3>C++</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, nobis.</p>
-                    </div>
-                    <div class="skillCard">
-                    <img src="images/React-icon.svg.png" alt="" class="skillicon">
-                    <h3>C++</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, nobis.</p>
-                    </div>
+            <!-- AboutRightSection -->
+            <div class="aboutright">
+              <h2 class="">My Education</h2>
+              <div class="educationline">
+                <h3>BSc. in CSE</h3>
+                <h4>International Islamic University Chattagram</h4>
+              </div>
+
+              <div class="educationline">
+                <h3>BSc. in CSE</h3>
+                <h4>International Islamic University Chattagram</h4>
+              </div>
+
+              <div class="educationline">
+                <h3>BSc. in CSE</h3>
+                <h4>International Islamic University Chattagram</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skill & Tools -->
+
+      <section id="" class="pad20">
+        <div class="pad20 SectionInside">
+          <h1 class="titleborder">MY SKILL & TOOL</h1>
+          <div class="Skillinside">
+            <div class="skill_conatainer">
+              <!-- skill1 -->
+              <div class="skill_deatails">
+                <div class="skill">
+                  <div class="skill_name">
+                    <i class="fa-brands fa-html5"></i>
+                    <h4>HTML</h4>
+                  </div>
+                  <h4>90%</h4>
                 </div>
-            </div>
-        </section>
+                <div class="skill_bar skill_html"></div>
+              </div>
 
-        <section class="letswork pad20">
-            <div class="formSection">
-                <h1 class="titleborder">LET'S WORK TOGETHER</h1>
-                <div class="mainform">
-                <div>
-                    <h1>Write me a message <br> for more Information!</h1>
-                    <p>I'm here to help and answer any queries that you might have. 
-                        <br>Got anything you want me to do ? 
-                        <br>Just send me a message and we can discuss further.</p>
+              <!-- skill2 -->
+
+              <div class="skill_deatails">
+                <div class="skill">
+                  <div class="skill_name">
+                    <i class="fa-brands fa-css"></i>
+                    <h4>CSS</h4>
+                  </div>
+                  <h4>85%</h4>
                 </div>
-                
-                <div class="frominside">
-                <form>
-                    <input type="text" placeholder="Name">
-                    <input type="email" name="" id="" placeholder="email">
-                    <input type="number" name="" id="" placeholder="Number">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="massage"></textarea>
-                    <button>Send Massge</button>
-                </form>
+                <div class="skill_bar skill_css"></div>
+              </div>
+
+              <!-- skill3 -->
+
+              <div class="skill_deatails">
+                <div class="skill">
+                  <div class="skill_name">
+                    <i class="fa-brands fa-js"></i>                    <h4>Java Scr</h4>
+                  </div>
+                  <h4>80%</h4>
                 </div>
+                <div class="skill_bar skill_js"></div>
+              </div>
+
+              <!-- skill4 -->
+              <div class="skill_deatails">
+                <div class="skill">
+                  <div class="skill_name">
+                    <i class="fa-brands fa-react"></i>
+                    <h4>React</h4>
+                  </div>
+                  <h4>30%</h4>
+                </div>
+                <div class="skill_bar skill_react"></div>
+              </div>
+
+              <!-- Skill5 -->
+
+              <div class="skill_deatails">
+                <div class="skill">
+                  <div class="skill_name">
+                    <i class="fa-solid fa-database"></i>
+                    <h4>SQL</h4>
+                  </div>
+                  <h4>60%</h4>
+                </div>
+                <div class="skill_bar skill_sql"></div>
+              </div>
             </div>
+            <img
+              id="skillimg"
+              src="images/vecteezy_male-programmer-working-with-computers_.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Project -->
+
+      <section id="project" class="pad20">
+        <div class="SectionInside">
+          <h1 class="titleborder">MY PROJECTS</h1>
+          <div class="project">
+            <!-- project1 -->
+            <div class="projectCard">
+              <img
+                src="images/Screenshot 2025-09-22 at 1.11.09 PM.png"
+                alt=""
+              />
+
+              <div class="projectCardContent">
+                <h2>Emergency Service</h2>
+                <p>
+                  A project designed to provide quick response and support
+                  during emergencies, ensuring safety and timely assistance for
+                  people in critical situations.
+                </p>
+
+                <a
+                  href="https://mdabdullah79.github.io/B12-A5-Emergency-Hotline/"
+                  target="_blank"
+                  ><button id="seeprojectbtn">Viwe Project</button></a
+                >
+              </div>
             </div>
-            
-        </section>
+
+            <!-- Project2 -->
+
+            <div class="projectCard">
+              <img
+                src="images/Screenshot 2025-09-22 at 2.15.20 PM.png"
+                alt=""
+              />
+
+              <div class="projectCardContent">
+                <h2>Green Earth</h2>
+                <p>
+                  A sustainability-focused project aimed at promoting
+                  eco-friendly practices, reducing environmental impact, and
+                  encouraging green initiatives for a healthier planet.
+                </p>
+                <a
+                  href="https://b12-5573-greenearth.netlify.app/"
+                  target="_blank"
+                  ><button id="seeprojectbtn">Viwe Project</button></a
+                >
+              </div>
+            </div>
+
+            <!-- project3 -->
+             <div class="projectCard">
+              <img
+                src="images/Screenshot 2025-09-26 at 11.30.45 AM.png"
+                alt=""
+              />
+
+              <div class="projectCardContent">
+                <h2>Ticket System</h2>
+                <p>
+                  The Ticket Management System is a web-based application built with React that allows users to create, track, and manage customer support tickets efficiently. It provides an intuitive interface for both customers and support agents, enabling smooth communication and quick issue resolution.
+                </p>
+                <a
+                  href=""
+                  target="_blank"
+                  ><button id="seeprojectbtn">Under Development</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="letswork pad20">
+        <div class="formSection">
+          <h1 class="titleborder">LET'S WORK TOGETHER</h1>
+          <div class="mainform">
+            <div class="formdeatails">
+              <h1>
+                Write me a message <br />
+                for more Information!
+              </h1>
+              <p>
+                I'm here to help and answer any queries that you might have.
+                <br />Got anything you want me to do ? <br />Just send me a
+                message and we can discuss further.
+              </p>
+            </div>
+
+            <div class="frominside">
+              <form>
+                <input type="text" placeholder="Name" />
+                <input type="email" name="" id="" placeholder="email" />
+                <input type="number" name="" id="" placeholder="Number" />
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="massage"
+                ></textarea>
+                <button>Send Massge</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+
+    <footer>
+      <p>© 2025 Mohammad Abdullah. All rights reserved.</p>
+      <div class="social_icon">
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+      </div>
+    </footer>
+  </body>
 </html>
